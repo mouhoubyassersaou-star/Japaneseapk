@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Japanese Master V2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>🇯🇵 Japanese Master V2</header>
+
+<div id="progress">آخر درس مفتوح: 0</div>
+
+<nav>
+  <button onclick="showSection('letters')">الحروف</button>
+  <button onclick="showSection('words')">الكلمات</button>
+  <button onclick="showSection('grammar')">القواعد</button>
+  <button onclick="showSection('lessons')">الدروس</button>
+  <button onclick="showSection('quiz')">اختبار</button>
+</nav>
+
+<input type="text" id="search" placeholder="ابحث عن حرف أو كلمة..." oninput="searchLessons(this.value)">
+
+<div id="content">اختر قسماً للبدء</div>
+
+<script src="script.js"></script>
+</body>
+</html>
